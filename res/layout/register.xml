@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_change"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/register_relativelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="30dip"
+        android:background="@drawable/register_corner"
+        android:padding="15dip" >
+
+        <TextView
+            android:id="@+id/register_tv_account"
+            style="@style/normalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dip"
+            android:text="账号" />
+
+        <EditText
+            android:id="@+id/register_et_account"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_tv_account"
+            android:background="@drawable/edittext_border_second"
+            android:hint="请输入您的手机号码"
+            android:inputType="phone"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:singleLine="true"
+            android:maxLength="11"
+            android:textSize="21dip" />
+
+        <TextView
+            android:id="@+id/register_tv_password"
+            style="@style/normalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_et_account"
+            android:layout_marginTop="3dip"
+            android:text="密码" />
+
+        <EditText
+            android:id="@+id/register_et_password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_tv_password"
+            android:background="@drawable/edittext_border_second"
+            android:hint="请输入您的密码"
+            android:inputType="textPassword"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:singleLine="true"
+            android:maxLength="16"
+            android:textSize="21dip" />
+
+        <Button
+            android:id="@+id/register_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_et_password"
+            android:layout_marginTop="6dip"
+            android:background="@drawable/button"
+            android:text="注册"
+            android:textSize="21sp" />
+    </RelativeLayout>
+
+</LinearLayout>

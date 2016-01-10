@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <com.zehao.view.SlideTabView
+        android:id="@+id/tabText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <View
+        android:id="@+id/liner"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_below="@+id/tabText"
+        android:background="#D1D1D1" />
+
+    <com.zehao.view.MineViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/liner" />
+
+</RelativeLayout>

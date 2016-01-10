@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/main_relativelayout_footer" >
+    
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_above="@+id/main_radio"
+        android:background="@color/line_gray" />
+    
+    <RadioGroup
+        android:id="@+id/main_radio"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#FFFFFFFF"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true" >
+
+        <RadioButton
+            android:id="@+id/radio_first"
+            style="@style/main_tab_bottom"
+            android:layout_marginTop="2.0dip"
+            android:drawableTop="@drawable/tab_home"
+            android:text="主页"
+            android:textColor="@drawable/tabbar_text_color" />
+
+        <RadioButton
+            android:id="@+id/radio_second"
+            style="@style/main_tab_bottom"
+            android:layout_marginTop="2.0dip"
+            android:drawableTop="@drawable/tab_gift"
+            android:text="关注"
+            android:textColor="@drawable/tabbar_text_color" />
+
+        <RadioButton
+            android:id="@+id/radio_third"
+            style="@style/main_tab_bottom"
+            android:layout_marginTop="2.0dip"
+            android:drawableTop="@drawable/tab_scan"
+            android:text="扫一扫"
+            android:textColor="@drawable/tabbar_text_color" />
+
+        <RadioButton
+            android:id="@+id/radio_forth"
+            style="@style/main_tab_bottom"
+            android:layout_marginTop="2.0dip"
+            android:drawableTop="@drawable/tab_search"
+            android:text="搜索"
+            android:textColor="@drawable/tabbar_text_color" />
+
+        <RadioButton
+            android:id="@+id/radio_fiveth"
+            style="@style/main_tab_bottom"
+            android:layout_marginTop="2.0dip"
+            android:drawableTop="@drawable/tab_info"
+            android:text="个人"
+            android:textColor="@drawable/tabbar_text_color" />
+    </RadioGroup>
+
+</RelativeLayout>
